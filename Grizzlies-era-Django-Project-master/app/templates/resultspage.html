@@ -1,0 +1,13 @@
+{%extends "base.html"%}
+{%block content%}
+<section
+<div class="results-box">
+    <h1>{{name}}</h1>
+    <ul>
+        {% for teamates in roster%}
+        <li>{{teamates}}</li>
+        {%endfor%}
+    </ul>
+    <p>{{desc}}</p>
+</div>
+{%endblock content%}
